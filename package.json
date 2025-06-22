@@ -1,0 +1,25 @@
+{
+  "name": "mern-crash-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon backEnd/server.js",
+    "build": "npm install && npm install --prefix frontEnd && npm run build --prefix frontEnd",
+    "start": "NODE_ENV=production node backEnd/server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10"
+  }
+}
